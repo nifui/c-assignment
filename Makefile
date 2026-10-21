@@ -1,7 +1,8 @@
 CC = gcc
 CFLAGS = -std=c11
-SOURCES = $(wildcard *.c)
-TARGETS = $(SOURCES:.c=)
+
+SOURCES := $(shell find . -name '*.c')
+TARGETS := $(SOURCES:.c=)
 
 .PHONY: all clean
 
