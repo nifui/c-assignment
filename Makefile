@@ -1,5 +1,6 @@
+
 CC = gcc
-CFLAGS = -std=c11
+CFLAGS = -std=c11 -lm
 
 SOURCES := $(shell find . -name '*.c')
 TARGETS := $(SOURCES:.c=)
